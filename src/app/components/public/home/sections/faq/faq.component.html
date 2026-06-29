@@ -1,0 +1,98 @@
+<section class="faq" id="faq">
+
+    <div class="container">
+
+        <div class="faq-header fade-up">
+
+            <span class="section-badge">
+                Preguntas Frecuentes
+            </span>
+
+            <h2>
+
+                Resolvemos tus dudas
+                <span>antes de comenzar.</span>
+
+            </h2>
+
+            <p>
+
+                Estas son algunas de las consultas más frecuentes de nuestros clientes.
+
+            </p>
+
+        </div>
+
+        <div class="faq-wrapper">
+
+            <!-- LADO IZQUIERDO -->
+
+            <div class="faq-info card">
+
+                <mat-icon>
+
+                    help_center
+
+                </mat-icon>
+
+                <h3>
+
+                    ¿No encuentras tu respuesta?
+
+                </h3>
+
+                <p>
+
+                    Nuestro equipo está listo para ayudarte y brindarte una asesoría personalizada.
+
+                </p>
+
+                <a href="https://wa.me/51927350176" target="_blank" class="btn-primary">
+
+                    Solicitar Asesoría
+
+                </a>
+
+            </div>
+
+            <!-- LADO DERECHO -->
+
+            <div class="faq-list">
+
+                <div class="faq-item card" *ngFor="let item of faqs; let i = index" [class.active]="activeIndex === i">
+
+                    <button class="faq-question" (click)="toggle(i)">
+
+                        <span>
+
+                            {{item.question}}
+
+                        </span>
+
+                        <mat-icon>
+
+                            {{activeIndex === i ? 'remove' : 'add'}}
+
+                        </mat-icon>
+
+                    </button>
+
+                    <div class="faq-answer" [class.show]="activeIndex === i">
+
+                        <p>
+
+                            {{item.answer}}
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

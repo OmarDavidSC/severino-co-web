@@ -1,0 +1,219 @@
+<section class="testimonials" id="testimonios">
+
+    <div class="container">
+
+        <div class="testimonials-header fade-up">
+
+            <span class="section-badge">
+                Testimonios
+            </span>
+
+            <h2>
+
+                Empresas que confían en
+                <span>Severino & Co.</span>
+
+            </h2>
+
+            <p>
+
+                Nuestro mayor logro es construir relaciones de confianza
+                a largo plazo con cada uno de nuestros clientes.
+
+            </p>
+
+        </div>
+
+        <!-- FILA 1 -->
+
+        <div class="marquee">
+
+            <div class="marquee-content">
+
+                <div class="testimonial card" *ngFor="let item of testimonials">
+
+                    <div class="stars">
+
+                        ★★★★★
+
+                    </div>
+
+                    <p>
+
+                        "{{item.comment}}"
+
+                    </p>
+
+                    <div class="client">
+
+                        <div class="avatar">
+
+                            {{item.initials}}
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+
+                                {{item.name}}
+
+                            </h4>
+
+                            <span>
+
+                                {{item.company}}
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- DUPLICADO PARA LOOP -->
+
+                <div class="testimonial card" *ngFor="let item of testimonials">
+
+                    <div class="stars">
+
+                        ★★★★★
+
+                    </div>
+
+                    <p>
+
+                        "{{item.comment}}"
+
+                    </p>
+
+                    <div class="client">
+
+                        <div class="avatar">
+
+                            {{item.initials}}
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+
+                                {{item.name}}
+
+                            </h4>
+
+                            <span>
+
+                                {{item.company}}
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FILA 2 -->
+
+        <div class="marquee reverse">
+
+            <div class="marquee-content">
+
+                <div class="testimonial card" *ngFor="let item of testimonials">
+
+                    <div class="stars">
+
+                        ★★★★★
+
+                    </div>
+
+                    <p>
+
+                        "{{item.comment}}"
+
+                    </p>
+
+                    <div class="client">
+
+                        <div class="avatar">
+
+                            {{item.initials}}
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+
+                                {{item.name}}
+
+                            </h4>
+
+                            <span>
+
+                                {{item.company}}
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="testimonial card" *ngFor="let item of testimonials">
+
+                    <div class="stars">
+
+                        ★★★★★
+
+                    </div>
+
+                    <p>
+
+                        "{{item.comment}}"
+
+                    </p>
+
+                    <div class="client">
+
+                        <div class="avatar">
+
+                            {{item.initials}}
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+
+                                {{item.name}}
+
+                            </h4>
+
+                            <span>
+
+                                {{item.company}}
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

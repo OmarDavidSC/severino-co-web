@@ -1,0 +1,375 @@
+.whatsapp-container {
+
+    position: fixed;
+
+    right: 28px;
+
+    bottom: 28px;
+
+    z-index: 999;
+
+}
+
+/*==============================
+BOTÓN
+==============================*/
+
+.whatsapp-btn {
+
+    width: 68px;
+
+    height: 68px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #25D366;
+
+    color: white;
+
+    font-size: 34px;
+
+    box-shadow: 0 15px 40px rgba(37, 211, 102, .35);
+
+    transition: .35s;
+
+    animation: pulse 2.5s infinite;
+
+    position: relative;
+
+}
+
+.whatsapp-btn:hover {
+
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow: 0 22px 55px rgba(37, 211, 102, .45);
+
+}
+
+.whatsapp-btn:active {
+
+    transform: scale(.94);
+
+}
+
+.whatsapp-btn i {
+
+    font-size: 34px;
+
+}
+
+/*==============================
+TOOLTIP
+==============================*/
+
+.tooltip {
+
+    position: absolute;
+
+    right: 80px;
+
+    white-space: nowrap;
+
+    padding: 10px 16px;
+
+    border-radius: 999px;
+
+    background: var(--surface-card);
+
+    border: 1px solid var(--border-color);
+
+    color: var(--text-primary);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateX(10px);
+
+    transition: .3s;
+
+    box-shadow: 0 15px 35px var(--shadow);
+
+}
+
+.whatsapp-btn:hover .tooltip {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateX(0);
+
+}
+
+/*==============================
+MENU
+==============================*/
+
+.whatsapp-menu {
+
+    position: absolute;
+
+    bottom: 90px;
+
+    right: 0;
+
+    width: 330px;
+
+    background: var(--surface-card);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0 25px 60px var(--shadow);
+
+    transform: translateY(20px) scale(.92);
+
+    transform-origin: bottom right;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .35s ease;
+
+}
+
+.whatsapp-menu.open {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0) scale(1);
+
+}
+
+/*==============================
+HEADER
+==============================*/
+
+.whatsapp-menu h4 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 22px 24px;
+
+    color: white;
+
+    background: linear-gradient(135deg,
+            var(--primary),
+            var(--primary-light));
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+}
+
+.whatsapp-menu h4 i {
+
+    font-size: 24px;
+
+}
+
+/*==============================
+ITEMS
+==============================*/
+
+.whatsapp-menu a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 24px;
+
+    text-decoration: none;
+
+    color: var(--text-primary);
+
+    border-bottom: 1px solid var(--border-color);
+
+    transition: .3s;
+
+}
+
+.whatsapp-menu a:last-child {
+
+    border-bottom: none;
+
+}
+
+.whatsapp-menu a i {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 22px;
+
+    color: white;
+
+    background: linear-gradient(135deg,
+            var(--primary),
+            var(--primary-light));
+
+    transition: .35s;
+
+    flex-shrink: 0;
+
+}
+
+.whatsapp-menu a div {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.whatsapp-menu a strong {
+
+    font-size: 15px;
+
+    color: var(--text-primary);
+
+    margin-bottom: 4px;
+
+}
+
+.whatsapp-menu a span {
+
+    font-size: 13px;
+
+    color: var(--text-secondary);
+
+    line-height: 1.4;
+
+}
+
+.whatsapp-menu a:hover {
+
+    background: rgba(200, 155, 60, .08);
+
+    padding-left: 30px;
+
+}
+
+.whatsapp-menu a:hover i {
+
+    transform: scale(1.08) rotate(-8deg);
+
+}
+
+/*==============================
+ANIMACIÓN BOTÓN
+==============================*/
+
+@keyframes pulse {
+
+    0% {
+
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, .45);
+
+    }
+
+    70% {
+
+        box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+
+    }
+
+    100% {
+
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+
+    }
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px) {
+
+    .whatsapp-container {
+
+        right: 20px;
+
+        bottom: 20px;
+
+    }
+
+    .whatsapp-btn {
+
+        width: 60px;
+
+        height: 60px;
+
+    }
+
+    .whatsapp-btn i {
+
+        font-size: 30px;
+
+    }
+
+    .whatsapp-menu {
+
+        width: 290px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .whatsapp-menu {
+
+        width: 270px;
+
+    }
+
+    .tooltip {
+
+        display: none;
+
+    }
+
+}

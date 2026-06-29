@@ -21,10 +21,17 @@ import { AddTokenInterceptor } from './shared/components/authentication/add-toke
 import { HomeComponent } from './components/public/home/home.component';
 import { HeroComponent } from './components/public/home/sections/hero/hero.component';
 import { AboutComponent } from './components/public/home/sections/about/about.component';
-import { TimelineComponent } from './components/public/home/sections/timeline/timeline.component';
-import { ProjectsComponent } from './components/public/home/sections/projects/projects.component';
 import { ContactComponent } from './components/public/home/sections/contact/contact.component';
-import { TechnologiesComponent } from './components/public/home/sections/technologies/technologies.component';
+import { ServicesComponent } from './components/public/home/sections/services/services.component';
+import { WhyChooseUsComponent } from './components/public/home/sections/why-choose-us/why-choose-us.component';
+import { IndustriesComponent } from './components/public/home/sections/industries/industries.component';
+import { ProcessComponent } from './components/public/home/sections/process/process.component';
+import { StatisticsComponent } from './components/public/home/sections/statistics/statistics.component';
+import { TeamComponent } from './components/public/home/sections/team/team.component';
+import { TestimonialsComponent } from './components/public/home/sections/testimonials/testimonials.component';
+import { FaqComponent } from './components/public/home/sections/faq/faq.component';
+import { CtaComponent } from './components/public/home/sections/cta/cta.component';
+import { WhatsappFloatComponent } from './components/public/home/sections/whatsapp-float/whatsapp-float.component';
 
 @NgModule({
   declarations: [
@@ -36,10 +43,17 @@ import { TechnologiesComponent } from './components/public/home/sections/technol
     HomeComponent,
     HeroComponent,
     AboutComponent,
-    TimelineComponent,
-    ProjectsComponent,
     ContactComponent,
-    TechnologiesComponent,
+    ServicesComponent,
+    WhyChooseUsComponent,
+    IndustriesComponent,
+    ProcessComponent,
+    StatisticsComponent,
+    TeamComponent,
+    TestimonialsComponent,
+    FaqComponent,
+    CtaComponent,
+    WhatsappFloatComponent,
   ],
   imports: [
     ComunModule,

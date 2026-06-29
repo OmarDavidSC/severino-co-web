@@ -1,0 +1,119 @@
+<section class="team" id="equipo">
+
+    <div class="container">
+
+        <div class="team-header fade-up">
+
+            <span class="section-badge">
+                Nuestro Equipo
+            </span>
+
+            <h2>
+
+                Profesionales comprometidos con
+
+                <span>el éxito de tu empresa.</span>
+
+            </h2>
+
+            <p>
+
+                Contamos con un equipo multidisciplinario que trabaja con
+                responsabilidad y compromiso.
+
+            </p>
+
+        </div>
+
+        <div class="team-showcase card" [class.change]="selectedMember">
+
+            <div class="team-photo">
+
+                <img [src]="selectedMember.image" [alt]="selectedMember.name">
+
+            </div>
+
+            <div class="team-info">
+
+                <span class="position">
+
+                    {{ selectedMember.position }}
+
+                </span>
+
+                <h3>
+
+                    {{ selectedMember.name }}
+
+                </h3>
+
+                <p>
+
+                    {{ selectedMember.description }}
+
+                </p>
+
+                <div class="team-data">
+
+                    <div>
+
+                        <h4>Especialidad</h4>
+
+                        <span>
+
+                            {{ selectedMember.specialty }}
+
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <h4>Experiencia</h4>
+
+                        <span>
+
+                            {{ selectedMember.experience }}
+
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <h4>Correo</h4>
+
+                        <span>
+
+                            {{ selectedMember.email }}
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="team-members">
+
+            <button class="member" *ngFor="let member of teamMembers" (click)="selectMember(member)"
+                [class.active]="selectedMember === member">
+
+                <img [src]="member.image" [alt]="member.name">
+
+                <span>
+
+                    {{ member.name }}
+
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>

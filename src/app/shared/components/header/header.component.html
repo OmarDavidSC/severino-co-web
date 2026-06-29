@@ -3,75 +3,54 @@
         <div class="header-wrapper">
             <!-- LOGO -->
             <a href="#inicio" class="brand">
-                <img [src]="themeService.getTheme() === 'dark' ? 'assets/img/logo-secundario.jpeg' : 'assets/img/logo-principal.jpeg'"
-                    alt="Coronado Software" class="brand-logo">
+                <img [src]="themeService.getTheme() === 'dark'
+                    ? 'assets/img/logos.jpeg'
+                    : 'assets/img/logo.jpeg'" alt="Severino & Co." class="brand-logo">
                 <div class="brand-info">
                     <span class="brand-name">
-                        Coronado Software
+                        Severino & Co.
                     </span>
                     <small>
-                        Software Solutions
+                        Servicios Contables
                     </small>
                 </div>
             </a>
-            <!-- MENU DESKTOP -->
+            <!-- MENU -->
             <nav class="nav-menu d-none d-lg-flex">
                 <a href="#inicio">Inicio</a>
                 <a href="#nosotros">Nosotros</a>
-                <a href="#tecnologias">Tecnologías</a>
-                <a href="#historial">Trayectoria</a>
-                <a href="#proyectos">Proyectos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#sectores">Sectores</a>
+                <a href="#equipo">Equipo</a>
                 <a href="#contacto">Contacto</a>
             </nav>
-            <!-- ACTIONS -->
             <div class="header-actions">
-                <!-- DARK MODE -->
                 <button class="theme-btn" (click)="toggleTheme()">
                     <mat-icon>
-                        {{
-                        themeService.getTheme() === 'dark'
-                        ? 'light_mode'
-                        : 'dark_mode'
-                        }}
+                        {{ themeService.getTheme() === 'dark' ? 'light_mode' : 'dark_mode'}}
                     </mat-icon>
                 </button>
-                <!-- WHATSAPP DESKTOP -->
                 <a href="https://wa.me/51927350176" target="_blank" class="nav-cta d-none d-md-flex">
-                    Solicitar Cotización
+                    Solicitar Asesoría
                 </a>
-                <!-- MENU MOBILE -->
                 <button class="mobile-btn d-lg-none" (click)="toggleMenu()">
                     <mat-icon>
-                        {{ menuOpen ? 'close' : 'menu' }}
+                        {{menuOpen ? 'close' : 'menu'}}
                     </mat-icon>
                 </button>
             </div>
         </div>
     </div>
-
-    <!-- MOBILE MENU -->
+    <!-- MOBILE -->
     <div class="mobile-menu" [class.open]="menuOpen">
-        <a href="#inicio" (click)="toggleMenu()">
-            Inicio
-        </a>
-        <a href="#nosotros" (click)="toggleMenu()">
-            Nosotros
-        </a>
-        <a href="#tecnologias" (click)="toggleMenu()">
-            Tecnologías
-        </a>
-        <a href="#historial" (click)="toggleMenu()">
-            Trayectoria
-        </a>
-        <a href="#proyectos" (click)="toggleMenu()">
-            Proyectos
-        </a>
-        <a href="#contacto" (click)="toggleMenu()">
-            Contacto
-        </a>
-
-        <a href="https://wa.me/51927350176" target="_blank" class="mobile-cta">
-            Solicitar Cotización
+        <a href="#inicio" (click)="toggleMenu()">Inicio</a>
+        <a href="#nosotros" (click)="toggleMenu()">Nosotros</a>
+        <a href="#servicios" (click)="toggleMenu()">Servicios</a>
+        <a href="#sectores" (click)="toggleMenu()">Sectores</a>
+        <a href="#equipo" (click)="toggleMenu()">Equipo</a>
+        <a href="#contacto" (click)="toggleMenu()">Contacto</a>
+        <a href="https://wa.me/51927350176" class="mobile-cta" target="_blank">
+            Solicitar Asesoría
         </a>
     </div>
 </header>

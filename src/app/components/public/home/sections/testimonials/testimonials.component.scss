@@ -1,0 +1,220 @@
+.testimonials{
+
+    background:var(--bg-primary);
+
+    overflow:hidden;
+
+}
+
+.testimonials-header{
+
+    max-width:760px;
+
+    margin:auto;
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.testimonials-header h2{
+
+    font-size:52px;
+
+    margin:20px 0;
+
+}
+
+.testimonials-header span{
+
+    color:var(--primary);
+
+}
+
+.testimonials-header p{
+
+    color:var(--text-secondary);
+
+    line-height:1.9;
+
+}
+
+/*=======================*/
+
+.marquee{
+
+    overflow:hidden;
+
+    margin-bottom:30px;
+
+}
+
+.marquee-content{
+
+    display:flex;
+
+    gap:25px;
+
+    width:max-content;
+
+    animation:scrollLeft 40s linear infinite;
+
+}
+
+.reverse .marquee-content{
+
+    animation:scrollRight 40s linear infinite;
+
+}
+
+.marquee:hover .marquee-content{
+
+    animation-play-state:paused;
+
+}
+
+/*=======================*/
+
+.testimonial{
+
+    width:360px;
+
+    padding:30px;
+
+    flex-shrink:0;
+
+    transition:.35s;
+
+}
+
+.testimonial:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stars{
+
+    color:#FFC107;
+
+    letter-spacing:3px;
+
+    margin-bottom:18px;
+
+}
+
+.testimonial p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.client{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.avatar{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-light));
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    font-size:20px;
+
+    transition:.35s;
+
+}
+
+.testimonial:hover .avatar{
+
+    transform:rotate(-10deg) scale(1.08);
+
+}
+
+.client h4{
+
+    margin-bottom:4px;
+
+    color:var(--text-primary);
+
+}
+
+.client span{
+
+    color:var(--text-secondary);
+
+    font-size:14px;
+
+}
+
+/*=======================*/
+
+@keyframes scrollLeft{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+@keyframes scrollRight{
+
+    from{
+
+        transform:translateX(-50%);
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .testimonial{
+
+        width:300px;
+
+    }
+
+}

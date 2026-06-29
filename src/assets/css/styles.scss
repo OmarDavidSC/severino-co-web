@@ -23,21 +23,27 @@ body {
 
 :root {
 
-    --bg-primary: #f8fafc;
-    --bg-secondary: #ffffff;
+    /* Fondos */
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #FFFFFF;
 
-    --surface: rgba(255, 255, 255, .90);
-    --surface-card: #ffffff;
+    /* Superficies */
+    --surface: rgba(255, 255, 255, 0.90);
+    --surface-card: #FFFFFF;
 
-    --text-primary: #001b4f;
-    --text-secondary: #466189;
+    /* Textos */
+    --text-primary: #2B1D17;
+    --text-secondary: #6B7280;
 
-    --primary: #1565d8;
-    --primary-light: #4d8df0;
+    /* Colores principales */
+    --primary: #C89B3C;
+    --primary-light: #E6C36A;
 
-    --border-color: #dbe5f3;
+    /* Bordes */
+    --border-color: #E8DCC3;
 
-    --shadow: rgba(21, 101, 216, .12);
+    /* Sombras */
+    --shadow: rgba(0, 0, 0, 0.08);
 
     --container: 1300px;
 }
@@ -48,21 +54,27 @@ body {
 
 .dark-theme {
 
-    --bg-primary: #010817;
-    --bg-secondary: #04112d;
+    /* Fondos */
+    --bg-primary: #2A0D08;
+    --bg-secondary: #4A120B;
 
-    --surface: rgba(6, 18, 45, .80);
-    --surface-card: rgba(10, 25, 58, .95);
+    /* Superficies */
+    --surface: rgba(74, 18, 11, 0.90);
+    --surface-card: rgba(90, 24, 15, 0.95);
 
-    --text-primary: #ffffff;
-    --text-secondary: #8fb6ff;
+    /* Textos */
+    --text-primary: #FFFFFF;
+    --text-secondary: #E9D8A6;
 
-    --primary: #4d8df0;
-    --primary-light: #75a9ff;
+    /* Colores principales */
+    --primary: #D4AF37;
+    --primary-light: #F2D27A;
 
-    --border-color: rgba(77, 141, 240, .15);
+    /* Bordes */
+    --border-color: rgba(212, 175, 55, 0.20);
 
-    --shadow: rgba(0, 0, 0, .55);
+    /* Sombras */
+    --shadow: rgba(0, 0, 0, 0.55);
 }
 
 /* ==========================================
@@ -279,4 +291,24 @@ section {
 
     box-shadow:
         0 0 20px rgba(77, 141, 240, .8);
+}
+
+.section-badge {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 999px;
+
+    background: rgba(200, 155, 60, .12);
+
+    border: 1px solid var(--border-color);
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
 }

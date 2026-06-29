@@ -1,0 +1,45 @@
+<div class="whatsapp-container">
+
+    <button class="whatsapp-btn" (click)="toggleMenu()">
+
+        <i class="bi bi-whatsapp"></i>
+
+    </button>
+
+    <div class="whatsapp-menu" [class.open]="menuOpen">
+
+        <h4>
+
+            <i class="bi bi-whatsapp"></i>
+
+            ¿Cómo podemos ayudarte?
+
+        </h4>
+
+        <a [href]="getWhatsappUrl('Hola, deseo una asesoría contable.')" target="_blank">
+
+            <i class="bi bi-chat-dots-fill"></i>
+
+            Solicitar una asesoría
+
+        </a>
+
+        <a [href]="getWhatsappUrl('Hola, quisiera información sobre sus servicios.')" target="_blank">
+
+            <i class="bi bi-file-earmark-text-fill"></i>
+
+            Información de servicios
+
+        </a>
+
+        <a [href]="getWhatsappUrl('Hola, deseo solicitar una cotización.')" target="_blank">
+
+            <i class="bi bi-cash-stack"></i>
+
+            Solicitar cotización
+
+        </a>
+
+    </div>
+
+</div>
