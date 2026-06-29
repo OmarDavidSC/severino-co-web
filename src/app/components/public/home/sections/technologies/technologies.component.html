@@ -1,0 +1,118 @@
+<section id="tecnologias" class="technologies">
+
+    <div class="particles"></div>
+
+    <div class="container">
+
+        <div class="tech-header">
+
+            <span class="section-tag">
+                Tecnologías
+            </span>
+
+            <h2 class="section-title">
+                Tecnologías que impulsan nuestras soluciones
+            </h2>
+
+            <p class="section-description">
+
+                Construimos sistemas utilizando tecnologías modernas,
+                seguras y escalables para garantizar el crecimiento
+                de cada proyecto.
+
+            </p>
+
+        </div>
+
+        <!-- KPIS -->
+
+        <div class="tech-kpis">
+
+            <div class="kpi-card">
+
+                <h3>10+</h3>
+
+                <span>
+                    Tecnologías dominadas
+                </span>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <h3>100%</h3>
+
+                <span>
+                    Soluciones escalables
+                </span>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <h3>24/7</h3>
+
+                <span>
+                    Disponibilidad
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="tech-grid">
+
+            <div class="tech-card" *ngFor="let tech of tecnologias">
+
+                <div class="tech-icon">
+
+                    <img [src]="tech.icono" [alt]="tech.nombre">
+
+                </div>
+
+                <h3>
+                    {{ tech.nombre }}
+                </h3>
+
+                <p>
+                    {{ tech.descripcion }}
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CARRUSEL -->
+
+        <div class="tech-marquee">
+
+            <div class="marquee-content">
+
+                <span>Angular</span>
+                <span>Vue.js</span>
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>.NET</span>
+                <span>SQL Server</span>
+                <span>MySQL</span>
+                <span>Docker</span>
+                <span>AWS</span>
+
+                <span>Angular</span>
+                <span>Vue.js</span>
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>.NET</span>
+                <span>SQL Server</span>
+                <span>MySQL</span>
+                <span>Docker</span>
+                <span>AWS</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

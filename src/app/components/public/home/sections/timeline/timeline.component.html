@@ -1,0 +1,33 @@
+<section id="historial" class="timeline-section">
+    <div class="container">
+        <!-- HEADER -->
+        <div class="timeline-header">
+            <span class="section-badge">
+                <mat-icon>auto_graph</mat-icon>
+                Nuestra Historia
+            </span>
+            <h2 class="timeline-title">
+                Construyendo soluciones,
+                <span>creciendo junto a nuestros clientes</span>
+            </h2>
+            <p class="timeline-subtitle">
+                Desde nuestros primeros desarrollos web hasta la creación
+                de plataformas empresariales, cada proyecto ha sido un paso
+                importante en la evolución de Coronado Software Solutions.
+            </p>
+        </div>
+        <!-- TIMELINE -->
+        <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+            <div class="timeline-item" *ngFor="let item of timeline; let i = index"
+                [style.animation-delay]="(i * .15) + 's'">
+                <div class="timeline-dot">
+                    <mat-icon>{{ item.icon }}</mat-icon>
+                </div>
+                <span class="timeline-year">{{ item.year }}</span>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
