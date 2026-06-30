@@ -28,7 +28,7 @@ export class TestimonialsComponent implements OnInit {
     },
     {
       initials: 'CR',
-      name: 'Cristonal Rinza',
+      name: 'Cristobal Rinza',
       company: 'Transportes Keyler',
       comment: 'Nos ayudan a mantener nuestras obligaciones tributarias al día.'
     },
