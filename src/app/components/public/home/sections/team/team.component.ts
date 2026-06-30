@@ -25,7 +25,7 @@ export class TeamComponent implements OnInit {
   teamMembers: TeamMember[] = [
 
     {
-      name: 'Mary Magdalena Severino Pupuche',
+      name: 'C.P Mary Magdalena Severino Pupuche',
       position: 'Asesora Contable',
       description: 'Bachiller en Contabilidad con experiencia en asesoriá contable, tributaria, laboral y financiera. Comprometida con brindar soluciones eficientes, confiables y personalizadas para impulsar el crecimiento de empresas y emprendedores.',
       specialty: 'Contabilidad y Tributación',
@@ -41,36 +41,18 @@ export class TeamComponent implements OnInit {
       specialty: 'Contabilidad, Tributación y Asesoría Empresarial',
       experience: '+2 años',
       email: 'dzasesoria01@gmail.com',
-      image: 'assets/img/team/person-2.jpg'
+      image: 'assets/img/team/jorge.jpeg'
     },
 
-    // {
-    //   name: 'Carlos Medina',
-    //   position: 'Asesor Tributario',
-    //   description: 'Experto en planeamiento tributario y cumplimiento de obligaciones fiscales para empresas.',
-
-    //   specialty: 'Tributación',
-
-    //   experience: '+12 años',
-
-    //   email: 'carlos@severino.pe',
-
-    //   image: 'assets/img/team/person-3.jpg'
-    // },
-
-    // {
-    //   name: 'María Torres',
-    //   position: 'Especialista Laboral',
-    //   description: 'Responsable de planillas, legislación laboral y asesoría en recursos humanos.',
-
-    //   specialty: 'Gestión Laboral',
-
-    //   experience: '+8 años',
-
-    //   email: 'maria@severino.pe',
-
-    //   image: 'assets/img/team/person-4.jpg'
-    // }
+    {
+      name: 'C.P Neftalí Yampufe Monje',
+      position: 'Asesora Contable',
+      description: 'Contadora Pública con experiencia en asesoría contable, tributaria, laboral y financiera Me caracterizo por ser una profesional responsable, organizada, proactiva y comprometida con el cumplimiento de los objetivos institucionales, manteniendo siempre un alto sentido de ética y confidencialidad. Tengo facilidad para el trabajo en equipo, la resolución de problemas y el aprendizaje continuo, orientando mi desempeño a brindar un servicio eficiente y de calidad.',
+      specialty: 'Contabilidad, Tributación',
+      experience: '+2 años',
+      email: 'yampufeneftali@gmail.com',
+      image: 'assets/img/team/net.jpeg'
+    },
 
   ];
 
