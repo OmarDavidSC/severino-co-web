@@ -37,7 +37,7 @@ export class FaqComponent implements OnInit {
 
     {
       question: '¿Cómo puedo solicitar una cotización?',
-      answer: 'Puedes comunicarte mediante WhatsApp, correo electrónico o utilizando el formulario de contacto de esta página.'
+      answer: 'Puedes comunicarte mediante WhatsApp, correo electrónico o contacto de esta página.'
     }
 
   ];

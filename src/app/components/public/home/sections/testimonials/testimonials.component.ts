@@ -15,37 +15,33 @@ export class TestimonialsComponent implements OnInit {
   testimonials = [
 
     {
-      initials: 'CR',
-      name: 'Carlos Rojas',
-      company: 'Constructora ABC',
+      initials: 'EV',
+      name: 'Emilio Vasquez',
+      company: 'Emprendedor',
       comment: 'Excelente servicio, siempre atentos y comprometidos con nuestra empresa.'
     },
-
     {
-      initials: 'MP',
-      name: 'María Pérez',
-      company: 'Centro Médico Vida',
+      initials: 'EB',
+      name: 'Eugenio Bravo',
+      company: 'Transportes Bravo Express',
       comment: 'Profesionales, organizados y con respuestas rápidas.'
     },
-
     {
-      initials: 'JL',
-      name: 'José López',
-      company: 'JL Comercial',
+      initials: 'CR',
+      name: 'Cristonal Rinza',
+      company: 'Transportes Keyler',
       comment: 'Nos ayudan a mantener nuestras obligaciones tributarias al día.'
     },
-
     {
-      initials: 'AT',
-      name: 'Ana Torres',
-      company: 'Grupo Andino',
+      initials: 'LM',
+      name: 'Lucy Mayanga',
+      company: 'Lucy Mayanga',
       comment: 'Su asesoría ha sido clave para el crecimiento de nuestra empresa.'
     },
-
     {
-      initials: 'RV',
-      name: 'Ricardo Vargas',
-      company: 'Transportes RV',
+      initials: 'AP',
+      name: 'Alfredo Polanco',
+      company: 'Alfredo Polanco',
       comment: 'Siempre encontramos soluciones rápidas y eficientes.'
     }
 

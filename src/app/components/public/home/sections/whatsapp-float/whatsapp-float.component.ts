@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./whatsapp-float.component.scss']
 })
 export class WhatsappFloatComponent {
-  Telefono = '51922933790';
+  Telefono = '51935200702';
 
   menuOpen = false;
 
