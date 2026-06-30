@@ -35,7 +35,7 @@ export class TeamComponent implements OnInit {
     },
 
     {
-      name: 'C.PC Jorge Daniel Zárate Rojas',
+      name: 'C.P.C Jorge Daniel Zárate Rojas',
       position: 'Asesor Contable',
       description: 'Contador Público Colegiado con experiencia en contabilidad, tributación, asesoría financiera y gestión empresarial. Comprometido con brindar soluciones estratégicas, eficientes y confiables, orientadas al cumplimiento normativo, la optimización de recursos y el crecimiento sostenible de empresas y emprendedores.',
       specialty: 'Contabilidad, Tributación y Asesoría Empresarial',
