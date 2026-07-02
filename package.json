@@ -8,7 +8,7 @@
     "build-dev": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --base-href /App.aspx --configuration=dev",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration production --base-href=/severino-co-web/ && npx angular-cli-ghpages --dir=dist/app"
+    "deploy": "ng build --configuration production --base-href=/ && npx angular-cli-ghpages --dir=dist/app"
   },
   "private": true,
   "dependencies": {
